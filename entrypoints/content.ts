@@ -8,5 +8,8 @@ export default defineContentScript({
     // ボタン要素を取得
     const button = getCommentButtonElm();
     if (!button) return;
+
+    // ボタンがクリックされたときのイベントリスナーを追加
+    button.addEventListener("click", function () {});
   },
 });
