@@ -2,12 +2,14 @@ import {
   getCommentButtonElm,
   getIsPizzaCommand,
   requestOpenOrderPage,
+  showStartComment,
 } from "@/src/utils";
 
 export default defineContentScript({
   matches: ["*://*.google.com/*"],
   main() {
-    console.log("Hello content.");
+    // 起動時のコンソール出力
+    showStartComment();
 
     // ボタン要素を取得
     const button = getCommentButtonElm();
