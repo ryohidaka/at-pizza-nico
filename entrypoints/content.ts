@@ -1,4 +1,4 @@
-import { getCommentButtonElm } from "@/src/utils";
+import { getCommentButtonElm, getIsPizzaCommand } from "../src/utils";
 
 export default defineContentScript({
   matches: ["*://*.google.com/*"],
@@ -10,6 +10,12 @@ export default defineContentScript({
     if (!button) return;
 
     // ボタンがクリックされたときのイベントリスナーを追加
-    button.addEventListener("click", function () {});
+    button.addEventListener("click", function () {
+      // ピザコマンドが含まれるか判定
+      const isPizzaCommand = getIsPizzaCommand();
+
+      // ピザコマンド以外の場合は何もしない
+      if (!isPizzaCommand) return;
+    });
   },
 });
