@@ -1,4 +1,8 @@
-import { getCommentButtonElm, getIsPizzaCommand } from "../src/utils";
+import {
+  getCommentButtonElm,
+  getIsPizzaCommand,
+  requestOpenOrderPage,
+} from "@/src/utils";
 
 export default defineContentScript({
   matches: ["*://*.google.com/*"],
@@ -16,6 +20,9 @@ export default defineContentScript({
 
       // ピザコマンド以外の場合は何もしない
       if (!isPizzaCommand) return;
+
+      // 新しいタブで注文ページを表示する
+      requestOpenOrderPage();
     });
   },
 });

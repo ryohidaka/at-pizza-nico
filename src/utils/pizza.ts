@@ -15,3 +15,11 @@ export const getIsPizzaCommand = (): boolean => {
   // ピザコマンドが含まれるか判定
   return text.includes(PIZZA_COMMAND);
 };
+
+/**
+ * 注文画面の表示を要求する
+ */
+export const requestOpenOrderPage = () => {
+  // @ts-ignore
+  chrome.runtime.sendMessage({ action: REQUEST_OPEN_ORDER_PAGE_ACTION });
+};
