@@ -6,7 +6,7 @@ import {
 } from "@/src/utils";
 
 export default defineContentScript({
-  matches: ["*://*.google.com/*"],
+  matches: ["*://*.nicovideo.jp/*"],
   main() {
     // 起動時のコンソール出力
     showStartComment();
