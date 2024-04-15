@@ -7,6 +7,11 @@ export default defineConfig({
     name: "@ピザ",
     host_permissions: ["*://*.nicovideo.jp/*"],
     permissions: ["activeTab", "background"],
+    browser_specific_settings: {
+      gecko: {
+        id: "at-pizza-nico@hidaka.dev",
+      },
+    },
   },
   vite: () => ({
     plugins: [react()],
