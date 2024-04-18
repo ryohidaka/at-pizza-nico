@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/ryohidaka/at-pizza-nico/compare/v0.1.0...v0.2.0) (2024-04-18)
+
+
+### Features
+
+* Enterキー押下時の処理を追加 ([0051d3b](https://github.com/ryohidaka/at-pizza-nico/commit/0051d3bebbbeeb75105e0630228cd62a3c8857cf))
+
 ## 0.1.0 (2024-04-18)
 
 
