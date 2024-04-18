@@ -1,5 +1,6 @@
 # at-pizza-nico
 
+[![release](https://badgen.net/github/release/ryohidaka/at-pizza-nico)](https://github.com/ryohidaka/at-pizza-nico/releases/)
 ![build](https://github.com/ryohidaka/at-pizza-nico/workflows/Build/badge.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
