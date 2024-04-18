@@ -2,7 +2,7 @@
   "name": "at-pizza-nico",
   "description": "ニコニコ動画の「＠ピザ」コマンドをオマージュした拡張機能",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "wxt",
