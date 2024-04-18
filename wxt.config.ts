@@ -6,7 +6,7 @@ export default defineConfig({
   manifest: {
     name: "@ピザ",
     host_permissions: ["*://*.nicovideo.jp/*"],
-    permissions: ["activeTab", "background"],
+    permissions: ["background"],
     browser_specific_settings: {
       gecko: {
         id: "at-pizza-nico@hidaka.dev",
