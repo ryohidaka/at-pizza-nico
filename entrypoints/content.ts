@@ -15,8 +15,7 @@ export default defineContentScript({
     const button = getCommentButtonElm();
     if (!button) return;
 
-    // ボタンがクリックされたときのイベントリスナーを追加
-    button.addEventListener("click", function () {
+    const callPizza = () => {
       // ピザコマンドが含まれるか判定
       const isPizzaCommand = getIsPizzaCommand();
 
@@ -25,6 +24,17 @@ export default defineContentScript({
 
       // 新しいタブで注文ページを表示する
       requestOpenOrderPage();
+    };
+
+    // ボタンがクリックされたときのイベントリスナーを追加
+    button.addEventListener("click", callPizza);
+
+    // Enterキーが押されたときのイベントリスナーを追加
+    document.addEventListener("keypress", function (e) {
+      // キーがEnterかどうかを確認
+      if (e.key === "Enter") {
+        callPizza();
+      }
     });
   },
 });
