@@ -31,4 +31,8 @@ jobs:
           firefox-jwt-secret: ${{ secrets.FIREFOX_JWT_SECRET }}
 
           # For Edge Extension
-          edge: false
+          edge: true
+          edge-product-id: "c388cc52-4172-4fd3-838c-7b5d64ea0d3c"
+          edge-client-id: ${{ secrets.EDGE_CLIENT_ID }}
+          edge-client-secret: ${{ secrets.EDGE_CLIENT_SECRET }}
+          edge-access-token-url: ${{ secrets.EDGE_ACCESS_TOKEN_URL }}
