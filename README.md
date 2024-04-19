@@ -16,7 +16,7 @@
 
 [<img src="./docs/images/store/firefox-add-ons.png" alt="Firefox Browser ADD-ONS" width="248" />](https://addons.mozilla.org/en-US/firefox/addon/at-pizza/)
 
-<!-- [<img src="./assets/images/microsoft.webp" alt="Microsoft Edge Addons" width="248" />](https://microsoftedge.microsoft.com/...) -->
+[<img src="./docs/images/store/microsoft.webp" alt="Microsoft Edge Addons" width="248" />](https://microsoftedge.microsoft.com/addons/detail/ngcaledeghgbcafdhingjdgbpdjihbob)
 
 ## How to use
 
